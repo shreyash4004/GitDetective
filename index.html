@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- All Container-->
+        <div class="container">
+
+            <!-- HEader-->
+            <div class="header">
+                <div class="title">GitDetective</div>
+                <div class="icon-text">
+                    <h4 data-modeText>Dark</h4>
+                    <div class="icon-container"><img id="mode-icon" data-sun src="./assets/images/moon-icon.svg" alt=""></div>
+                </div>
+            </div>
+
+            <!--input Container-->
+            <div class="input-container">
+                <div class="icon-container1">
+                    <img id="search-icon" src="./assets/images/search-icon.svg" alt="">
+                </div>
+                <!--Input-->
+                <input type="text" class="input-size" placeholder="Enter Git Hub username...">
+
+                <!--no found div-->
+                <div class="not-found">User Not Found</div>
+                <button class="search-btn">Search</button>
+
+            </div>
+
+            <!--Profile Content-->
+            <div class="profile-content">
+                <div class="profile-heding">
+                    <img src="" alt="" data-dp width="150px" height="150">
+                    <div class="profile-info">
+                        <div class="profile-name"><h2 data-profileName></h2>
+                            <a href="" target="_blank" rel="noopener noreferrer" id="user" data-username></a>
+                        </div>
+                        
+                        <p data-bio>
+                        </p>
+                    </div>
+                    <p id="date" data-date></p>
+                </div>
+
+                <!--Folllwoer Repo Info-->
+                <div class="Repo-Follow">
+                    <div class="repo-box">
+                        <p>Repo</p>
+                        <p data-repo></p>
+                    </div>
+
+                    <div class="repo-box">
+                        <p>Followers</p>
+                        <p data-follow></p>
+                    </div>
+
+                    <div class="repo-box">
+                        <p>Following</p>
+                        <p data-following></p>
+                    </div>
+                </div>
+
+                <!--Links social-->
+                <div class="bottom-wrapper">
+                    <div class="profile-info1">
+                        <div class="bottom-icons"><img src="./assets/images/location-icon.svg" alt=""></div>
+                        <p data-location></p>
+                    </div>
+
+                    <div class="profile-info1">
+                        <div class="bottom-icons"><img src="./assets/images/website-icon.svg" alt=""></div>
+                                <a href="#" data-page></a>
+                    </div>
+                    
+                    <div class="profile-info1">
+                        <div class="bottom-icons"><img src="./assets/images/twitter-icon.svg" alt=""></div>
+                                <a href="#" data-twitter></a>
+                    </div>
+
+                    <div class="profile-info1">
+                         <div class="bottom-icons"><img src="./assets/images/company-icon.svg" alt=""></div>
+                                <p data-company></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>
